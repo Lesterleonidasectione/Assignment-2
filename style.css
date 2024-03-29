@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.ocregister.com/wp-content/uploads/migration/nmr/nmrq9s-b88344845z.120150413162040000g54958ks.50.jpg?w=1024');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: yellow; 
+}
+
+header {
+    background-color: #5a4287; /* Purple background */
+    color: #f0f00fcd; /* Yellow font color */
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff; /* White font color */
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section p {
+    color: yellow;
+}
+
+footer {
+    background-color: #5a4287; /* Purple background */
+    color: #fff; /* White font color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header, section, footer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+header.in-view, section.in-view, footer.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+header h1 {
+    margin: 0;
+    animation: moveText 10s linear infinite; 
+}
+
+#about{
+    color:#5a4287
+}
+
+
+#about2{
+    color: #5a4287;
+}
